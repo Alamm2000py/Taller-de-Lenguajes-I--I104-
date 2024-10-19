@@ -1,26 +1,27 @@
-/*.Un teléfono móvil tiene varios bits de configuración que permite controlar el encendido y apagado de
-dispositivos con el objetivo, generalmente, de ahorrar energía. Cada bit se asocia a un módulo
-diferente donde un 1 significa encendido y un 0 apagado. Comenzando desde el bit más significativo,
-la descripción de estos bits es la siguiente: Bluetooth, Wifi, GPS, Datos, Cámara Frontal, Cámara
+/*.Un telï¿½fono mï¿½vil tiene varios bits de configuraciï¿½n que permite controlar el encendido y apagado de
+dispositivos con el objetivo, generalmente, de ahorrar energï¿½a. Cada bit se asocia a un mï¿½dulo
+diferente donde un 1 significa encendido y un 0 apagado. Comenzando desde el bit mï¿½s significativo,
+la descripciï¿½n de estos bits es la siguiente: Bluetooth, Wifi, GPS, Datos, Cï¿½mara Frontal, Cï¿½mara
 Trasera, Linterna y Vibrar.
 Bluetooth Wifi GPS Datos Frontal Trasera Linterna Vibrar
 Bit 7 Bit 6 Bit 5 Bit 4 Bit 3 Bit 2 Bit 1 Bit 0
 Resuelva:
-a. Utilice un tipo enumerativo para representar los distintos módulos que tiene el teléfono,
-asignándole a cada integrante un valor que sea potencia de 2. Esta estrategia permite combinar
-varios valores en una misma variable, y de esta forma modelar que un módulo está activo cuando
-el valor asociado está presente.
-b. Defina 2 constantes donde la primera contiene a todos los módulos y otra donde no contenga
+a. Utilice un tipo enumerativo para representar los distintos mï¿½dulos que tiene el telï¿½fono,
+asignï¿½ndole a cada integrante un valor que sea potencia de 2. Esta estrategia permite combinar
+varios valores en una misma variable, y de esta forma modelar que un mï¿½dulo estï¿½ activo cuando
+el valor asociado estï¿½ presente.
+b. Defina 2 constantes donde la primera contiene a todos los mï¿½dulos y otra donde no contenga
 ninguno.
 c. Dada una variable del tipo definido en a), describa expresiones que permitan:
-a. Marcar un módulo como activo
-b. Marcar un módulo como inactivo
-c. Invertir el estado actual de un módulo
-d. Determinar si un módulo esta activo
+a. Marcar un mï¿½dulo como activo
+b. Marcar un mï¿½dulo como inactivo
+c. Invertir el estado actual de un mï¿½dulo
+d. Determinar si un mï¿½dulo esta activo
 d. Implemente un programa donde aplique todos los puntos anteriores. */
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 typedef enum {BLUETOOTH = 2 << 7 , WIFI = 2 << 6, GPS = 2 << 5, DATOS = 2 << 4, FRONTAL =2 << 3, TRASERA = 2 << 2, LINTERNA = 2 << 1, VIBRAR = 2 << 0} modulos;
 
